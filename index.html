@@ -1,47 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Texto Animado</title>
-<style>
-  body {
-    font-family: 'Comic Sans MS', cursive, sans-serif;
-    background-color: #ffcc99;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-  }
-
-  .text-animado {
-    font-size: 36px;
-    color: #ff00ff;
-    position: relative;
-    animation: move-text 0.5s infinite alternate, rotate-text 2s linear infinite;
-  }
-
-  @keyframes move-text {
-    0% {
-      transform: translateY(0);
-    }
-    100% {
-      transform: translateY(-10px);
-    }
-  }
-
-  @keyframes rotate-text {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RZennus - Página Inicial</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="text-animado">Eu sou um texto animado!</div>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="Rz.png" alt="RZennus Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Serviços</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Bem-vindo à RZennus</h1>
+                <p>Conectando você com o mundo.</p>
+                <a href="#" class="btn">Saiba Mais</a>
+            </div>
+        </section>
+        <section class="features">
+            <div class="container">
+                <h2>Nossos Serviços</h2>
+                <div class="feature">
+                    <h3>Serviço 1</h3>
+                    <p>Descrição do serviço 1.</p>
+                </div>
+                <div class="feature">
+                    <h3>Serviço 2</h3>
+                    <p>Descrição do serviço 2.</p>
+                </div>
+                <div class="feature">
+                    <h3>Serviço 3</h3>
+                    <p>Descrição do serviço 3.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 RZennus. Todos os direitos reservados.</p>
+        </div>
+    </footer>
 </body>
 </html>
